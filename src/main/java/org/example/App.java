@@ -1,13 +1,14 @@
 package org.example;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        FunctionCalculator functionCalculator = new FunctionCalculator();
+        try {
+            System.out.printf("%.6f", functionCalculator.calculate(10, 10, 16, 20) );
+        } catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }
